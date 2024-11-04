@@ -3,40 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>독서 기록장</title>
     <style>
-        div{
-            /* display: inline-block; */
-            width: 150px;
-            height: 60px;
-            border: 1px solid red;
-            background-color: #fffff0;
-        }
-        #sj:hover{opacity: 0.7;
-        }
-        #float{
-            position: fixed;
-            left: 300px;
-            width: 400px;
-            height: 300px;
-        }
-    </style>
+        body{background-color: hsl(44, 100%, 97%);}
+        header{ 
+            text-align: center;
+            font-family: verdana, fantasy;}
+    nav {background-color:rgb(92, 81, 2);
+    padding: 15px;}
+    nav a{margin: 0 200px;
+            color: white;
+            font-size: 16px;
+        font-weight: bold;}
+        </style>
 </head>
 <body>
-    <div>DIV1</div>
-    <div class="dd">DIV2</div>
-    <div id="sj">DIV3</div>
-    <div class="dd">DIV4</div>
-    <div>DIV5</div>
-    <div>DIV6</div>
-    <div id="float">DIV7
-    <img src="사과.jpg" width="200px" style="float:left">
-    <!-- 왼쪽으로 딱 붙게 됨 float -->
-    </div>
-    <ul>
-        <li style="list-style: square;">프랑스</li>
-        <li>이탈리아</li>
-        <li>체코</li>
-    </ul>
+    <header>
+        <img src="image/독서.png" width="300px" height="300px" alt="로고">
+        <div class="absolute">
+            <h1>If you want to change the world, pick up your pen and write.</h1>
+        </div>
+    </header>
+        <h3 style="position: absolute;
+        top:10px;
+        right: 20px;">202403853 이예진</h3>
+
+    <nav>
+        <a href="#">책 추천</a>
+        <a href="#">독서 기록</a>
+        <a href="#">장소 추천</a>
+    </nav>
+<hr>
+<iframe src=leftframe.html width="400" height="1000">
+</iframe>
+<iframe src="rightframe.html" width="1000" height="1000"></iframe>
 </body>
 </html>
