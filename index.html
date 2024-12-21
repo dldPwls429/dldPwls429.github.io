@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>독서 기록장</title>
+    <style>
+        body{background-color: hsl(44, 100%, 97%);}
+        header{ 
+            text-align: center;
+            font-family: verdana, fantasy;}
+    nav {background-color:rgb(92, 81, 2); padding: 15px;}
+    nav a{margin: 0 200px; color: white; font-size: 16px; font-weight: bold;}
+    section{width: 1000px; height: 100%; background-color:
+         beige; padding: 10px 20px; display: flex; gap: 20px;
+            flex-direction: column;
+            overflow-y: auto;}
+    aside { height: 100%; 
+        background-color: rgb(165, 152, 109); padding: 10px 20px;
+     margin-left:10px; overflow-y: auto;}
+    article{ background-color: rgb(255, 255, 255);
+            padding: 10px 20px;
+            border-radius: 30px;
+        margin: 40px;}
+        .parent{ display: grid;
+            grid-template-columns: 20% 80%;
+            gap: 20px;
+            margin: 20px;
+            height: calc(100vh - 140px);}
+        </style>
+         <script> 
+        function save() {
+            alert('저장되었습니다.');}
+ 
+    </script>
+
+</head>
+<body>
+    <header>
+        <img src="image/독서.png" width="300px" height="300px" alt="로고">
+        <div class="absolute">
+            <h1>If you want to change the world, pick up your pen and write.</h1>
+        </div>
+    </header>
+        <h3 style="position: absolute;
+        top:10px;
+        right: 20px;">202403853 이예진</h3>
+    <nav>
+        <a href="refer.html">책 추천</a>
+        <a href="#독서기록">독서 기록</a>
+        <a href="#장소">장소 추천</a>
+    </nav>
+<hr>
+<div class="parent">
+
+    <aside class="child">
+         <h4>회원 정보를 입력해주세요.</h4>
+            <form>
+            ID: <input type="text"><br>
+            password: <input type="password">
+            <input type="submit" value="입력">
+            </form>
+        <hr>
+            <h4>모든 작가에게 전하고 싶은말</h4>
+            다양한 의견과 응원 메세지 남겨 주세요.<br>
+            <textarea placeholder="평소 전하지 못한 말들을 남겨 보세요." cols="35" rows="5" ></textarea>
+      
+        <hr>
+   
+            <h4>오늘의 독서와 어울리는 노래는?</h4>
+            <p style="color:rgb(227, 227, 227)">재생 버튼을 누르면 음악이 재생됩니다.</p>
+            <audio src="image/1730714793513mmv1ywxp.mp3" controls loop>
+            </audio>
+   
+</aside>
+<section>
+<article>
+<h2>지금 문학은?</h2><hr>
+<h3>노벨 문학상 수상자인 한강 작가 인터뷰</h3>
+     
+        <div id="chat" style="width: 100%; height: 100px; font-size: 20px;">
+           “수상은 부담스런 일이지만 소설 쓰다보면 부담 사라져
+            내 소설은 질문에 대한 소설
+            질문의 끝 다다르는 그 순간
+            다음 질문으로 넘어가게 돼
+            생명의 감각 주제로 집필 중”
+        </div>
+        <iframe src="https://www.mk.co.kr/news/culture/11137036" name="upper" width="100%" height="500"></iframe>
+        
+                    <details> <summary>또 다른 문학 소식 들으러 가기</summary>
+                        <a href="https://m.yonhapnewstv.co.kr/news/MYH20241011023100641">[이슈오늘] 노벨문학상 현실로…전 세계 뒤흔든 한강 열풍</a><br>
+                    <a href="https://www.newspim.com/news/view/20241016000604">[노벨문학상 이후 2] 한국문학, 해외에서 더 잘 팔린다</a>
+                </details>
+            </article>
+<article id="독서기록">
+        <h2>독서기록</h2>
+        읽은 책을 돌아보며 작성해보세요!
+        <hr>
+        <form id="form">
+            <label>평점</label>
+            <select>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <p>
+                <textarea placeholder="당신의 책은 어떠셨나요?" style="width: 500px; height:300px;"></textarea>
+                <br><button type="submit" onclick="save()">저장</button>
+                
+            </p>
+        </form>
+</article>
+<article id="장소">
+        <h2>책 읽을 장소 추천</h2><hr>
+        <ol>
+            <h3><li>도서관</li></h3>
+            소음에서 벗어나 오직 책 넘기는 소리만이 존재하는 공간!
+                <ul>
+                    <li>충남대학교 도서관</li>
+                   <a href="https://library.cnu.ac.kr/"> https://library.cnu.ac.kr/</a>
+                    <li>대구 남부 도서관</li>
+                   <a href="https://library.daegu.go.kr/nambu/index.do">https://library.daegu.go.kr/nambu/index.do</a>
+                </ul>
+            <h3><li>카페</li></h3>
+            너무 조용한 곳에서는 집중이 안 된다 하시는 분들께 추천 드립니다!
+                <ul>
+                    <li>스타벅스</li>    
+                    <li>누오보 </li><img src="image/누오보.jpg"  width="300" height="400" alt="누오보">
+                    <li>스윗니스커피</li><img src="image/스윗니스.jpg"  width="500" height="300" alt="스윗니스">
+                </ul>
+            <h3><li>집</li></h3>
+            집만큼 편한 곳이 어디 있을까요... 추운 날씨에 이불 속에서 귤과 함께!<br>
+                
+                    <img src="image/집.jpg" width="500" height="300" alt="집">
+                    <img src="image/침대.jpg" width="500" height="300" alt="침대">
+                           
+              
+           
+        </ol>
+</article>
+</section>
+</div>
+</body>
+</html>
